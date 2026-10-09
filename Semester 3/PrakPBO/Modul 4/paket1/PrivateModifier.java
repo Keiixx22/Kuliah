@@ -7,5 +7,11 @@ public class PrivateModifier {
     public void printInfo() {
         System.out.println("private modifier");
     }
+
+    public static void main(String[] args) {
+        PrivateModifier pm = new PrivateModifier();
+
+        pm.printInfo();
+    }
 }
 
