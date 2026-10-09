@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toko Online Sederhana</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gradient-to-br from-slate-200 to-blue-200 min-h-screen p-6 ">
+        <main class="max-w-3xl mx-auto space-y-4">
+            <h1 class="text-2xl font-bold">Toko Online Sederhana</h1>
+            <section class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl shadow-md p-6 space-y-2">
+                    <h2 class="text-sm font-semibold text-slate-500 uppercase">Produk</h2>
+                    <p class="text-lg font-semibold" id="produk-nama">-</p>
+                    <p>Harga: <span class="text-xl font-semibold" id="produk-harga">-</span></p>
+                    <p>Stok: <span class="text-xl font-semibold" id="produk-stok">-</span></p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 space-y-2">
+                    <h2 class="text-sm font-semibold text-slate-500 uppercase">Pembeli</h2>
+                    <p class="text-lg font-semibold" id="pembeli-nama">-</p>
+                    <p>ID: <span id="pembeli-id">-</span></p>
+                    <p>Saldo: <span class="text-xl font-semibold" id="pembeli-saldo">-</span></p>
+                </div>
+            </section>
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-center gap-3">
+                <label for="input-qty" class="font-medium">Jumlah</label>
+                <input
+                    type="number"
+                    id="input-qty"
+                    min="1"
+                    value="1"
+                    class="border rounded-lg px-3 py-2 w-24"
+                />
+                <button
+                    type="button"
+                    id="btn-beli"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                >
+                    Beli
+                </button>
+            </div>
+            <div id="pesan" class="hidden rounded-lg p-4"></div>
+            <div class="flex flex-wrap gap-3">
+                <button
+                    type="button"
+                    id="btn-skenario-1"
+                    class="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition"
+                >
+                    Skenario 1: Berhasil
+                </button>
+                <button
+                    type="button"
+                    id="btn-skenario-2"
+                    class="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition"
+                >
+                    Skenario 2: Gagal stok
+                </button>
+                <button
+                    type="button"
+                    id="btn-skenario-3"
+                    class="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition"
+                >
+                    Skenario 3: Gagal saldo
+                </button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
