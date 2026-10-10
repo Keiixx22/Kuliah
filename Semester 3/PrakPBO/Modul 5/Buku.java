@@ -3,6 +3,18 @@ public class Buku {
     int tahunTerbit, cetakanKe;
     double hargaJual;
 
+    public Buku() {
+        namaPengarang = "Rendi";
+    }
+
+    public Buku(String namaPengarang, String JudulBuku) {
+        this.judulBuku = JudulBuku;
+        this.namaPengarang = namaPengarang;
+        tahunTerbit = 1990;
+        cetakanKe = 10;
+        hargaJual = 10000;
+    }
+
     public Buku(String judulBuku, String namaPengarang, int tahunTerbit, int cetakanKe, double hargaJual) {
         this.judulBuku = judulBuku;
         this.namaPengarang = namaPengarang;
@@ -44,6 +56,6 @@ public class Buku {
         buku8.info();
         buku9.info();
         buku10.info();
-        
+
     }
 }

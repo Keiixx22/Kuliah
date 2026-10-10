@@ -10,7 +10,7 @@ public class Constructor {
     }
 
     void displayDetails() {
-        System.out.println("Nama saya : " + nama + "\n" + 
+        System.out.println("Nama saya : " + nama + "\n" +
         "NIM : " + nim + "\n" +
         "Alamat saya : " + alamat);
     }
