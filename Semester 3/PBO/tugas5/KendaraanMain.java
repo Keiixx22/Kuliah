@@ -5,10 +5,13 @@ public class KendaraanMain {
         MobilListrik ml = new MobilListrik();
 
         System.out.println("\n===Info Mobil===");
+        mobil.jalan();
         mobil.info();
         System.out.println("\n===Info Motor===");
+        motor.jalan();
         motor.info();
         System.out.println("\n===Mobil Listrik===");
+        ml.jalan();
         ml.info();
     }
 }
