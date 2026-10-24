@@ -1,52 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Tangguh Pandu Prabowo | NIM: L200250025");
-        System.out.println();
-        System.out.println("========================================");
-        System.out.println("     ANOMALY HUNTER MANAGEMENT SYSTEM");
-        System.out.println("========================================");
-        System.out.println();
+        Warrior warrior1 = new Warrior("Pandu", 40, 100, 200);
+        Mage mage1 = new Mage("Roxy", 55, 90, 200);
+        Marksman marksman1 = new Marksman("Sylphy", 45, 60, 70);
 
-        ScientistAgent agent1 = new ScientistAgent("L01", "Arep", 75, "Quantum Anomaly");
-        CombatAgent agent2 = new CombatAgent("L02", "Egga", 82, "Perimeter Security");
-        ScientistAgent agent3 = new ScientistAgent("L03", "Pandu", 100, "Temporal Anomaly");
+        System.out.println("Tangguh Pandu Prabowo \nL200250025");
 
-        System.out.println("[AGENT 01]");
-        agent1.displayProfile();
-        System.out.println();
-        System.out.println("Mission:");
-        agent1.performMission();
-        System.out.println();
+        System.out.println("\n\n=== Warrior ===");
+        warrior1.setDamage(150);
+        warrior1.setHealthPoint(95);
+        warrior1.info();
+        warrior1.serang();
 
-        System.out.println("[AGENT 02]");
-        agent2.displayProfile();
-        System.out.println();
-        System.out.println("Mission:");
-        agent2.performMission();
-        System.out.println();
+        System.out.println("\n=== Mage ===");
+        mage1.setMagic(200);
+        mage1.setHealthPoint(70);
+        mage1.info();
+        mage1.serang();
 
-        System.out.println("[AGENT 03]");
-        agent3.displayProfile();
-        System.out.println();
-        System.out.println("Mission:");
-        agent3.performMission();
-        System.out.println();
-
-        System.out.println("========================================");
-        System.out.println("        VALIDATION TEST");
-        System.out.println("========================================");
-        System.out.println();
-
-        Agent target = agent1;
-        System.out.println("Current Experience : " + target.getExperienceLevel());
-        System.out.println("Attempted Value    : 150");
-        System.out.println();
-        target.setExperienceLevel(150);
-        System.out.println();
-        System.out.println("Experience after   : " + target.getExperienceLevel());
-
-        System.out.println();
-        System.out.println("========================================");
-        System.out.println("Program selesai.");
+        System.out.println("\n=== Marksman ===");
+        marksman1.setAtkSpeed(55);
+        marksman1.setHealthPoint(70);
+        marksman1.info();
+        marksman1.serang();
     }
 }
