@@ -23,5 +23,9 @@ public class Main {
         marksman1.setHealthPoint(70);
         marksman1.info();
         marksman1.serang();
+
+        //Sengaja salah untuk validasi
+        System.out.println("\n=== Test Validasi ===");
+        warrior1.setHealthPoint(150);
     }
 }
