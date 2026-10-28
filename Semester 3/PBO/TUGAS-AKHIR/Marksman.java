@@ -6,16 +6,16 @@ public class Marksman extends Role {
         setAtkSpeed(atkSpeed);
     }
 
-    public int getSpeed() {
-        return atkSpeed;
-    }
-
     public void setAtkSpeed(int atkSpeed) {
         if (atkSpeed < 30) {
             System.out.println("Attack Speed tidak bisa lebih kecil dari 30");
         } else {
             this.atkSpeed = atkSpeed;
         }
+    }
+
+    public int getSpeed() {
+        return atkSpeed;
     }
 
     @Override

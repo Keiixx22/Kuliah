@@ -24,6 +24,8 @@ public class Main {
         marksman1.info();
         marksman1.serang();
 
+        System.out.println("\nJumlah karakter : " + Role.getJumlahKarakter());
+
         //Sengaja salah untuk validasi
         System.out.println("\n=== Test Validasi ===");
         warrior1.setHealthPoint(150);

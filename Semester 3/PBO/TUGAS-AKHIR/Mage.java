@@ -19,12 +19,12 @@ public class Mage extends Role {
         }
     }
 
-    @Override 
+    @Override
     public void serang() {
         System.out.println("Mage menyerang dengan magic damage sebesar : " + magicDmg);
     }
 
-    @Override 
+    @Override
     public void info() {
         super.info();
         System.out.println("Magic damage : " + magicDmg);
