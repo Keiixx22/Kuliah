@@ -1,6 +1,7 @@
 public class Product {
     String nama;
     private double price;
+    static int umur = 10;
 
     public void setHarga(double price) {
         if (price < 1000) {
@@ -9,6 +10,10 @@ public class Product {
         } else {
             this.price = price;
         }
+    }
+
+    public void setHarga(String nama) {
+        this.nama = nama;
     }
 
     public double getHarga() {
